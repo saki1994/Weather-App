@@ -35,7 +35,7 @@ app.post("/", (req, res) => {
   const city = req.body.city;
   const cnt = "6";
   const apiKey = "92c3cde648bccd46adafd159f4862f6f";
-  const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=${cnt}&units=metric&appid=${process.env.MY_API}#`;
+  const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=${cnt}&units=metric&appid=${apiKey}#`;
 
   https.get(url, (response) => {
     response.on("data", (data) => {
