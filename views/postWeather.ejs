@@ -1,0 +1,60 @@
+ 
+ <%- include('partials/header.ejs'); -%>   
+ <p class="place"><i class="far fa-compass"></i> &nbsp; <%= today.place %> 
+ </p>
+  
+    <h2 class="temp"><%= today.temperature%>°c </h2>    
+    <p class="temp-type"><%= today.description%> &nbsp; 
+      <span>H: <%=today.tempMax %>° &nbsp; L: <%=today.tempMin %>°  </span>
+    </p>
+   </div>
+   <div class="right-side"> 
+    <table>
+        <tr>
+          <th>HUMIDITY</th>
+          <td><%=today.humidity%>%</td>
+        </tr>
+        
+      <tr>
+        <th>FEELS LIKE</th>
+        <td><%=today.feelsLike%>°</td>
+      </tr>
+        <tr>
+          <th>WIND</th>
+          <td><%=today.wind%>km/h</td>
+        </tr>
+  </table>
+  <hr>
+  <div class='forecast-box'>
+    <div>
+      <img src="http://openweathermap.org/img/wn/<%= first.icon %>@2x.png" alt="">
+      <p><%= first.time%></p>
+      <p><%= first.temp%>°</p>
+    </div>
+    <div>
+      <img src="http://openweathermap.org/img/wn/<%= second.icon %>@2x.png" alt="">
+      <p><%= second.time%></p>
+      <p><%= second.temp%>°</p>
+    </div>
+    <div>
+      <img src="http://openweathermap.org/img/wn/<%= third.icon %>@2x.png" alt="">
+      <p><%= third.time%></p>
+      <p><%= third.temp%>°</p>
+    </div>
+    <div>
+      <img src="http://openweathermap.org/img/wn/<%= fourth.icon %>@2x.png" alt="">
+      <p><%= fourth.time%></p>
+      <p><%= fourth.temp%>°</p>
+    </div>
+    <div>
+      <img src="http://openweathermap.org/img/wn/<%= fifth.icon %>@2x.png" alt="">
+      <p><%= fifth.time%></p>
+      <p><%= fifth.temp%>°</p>
+    </div>
+  </div>
+      <form class="search" action="/" method="POST"> 
+          <input type="text" name="city" id="city" placeholder="Enter your city...">  
+      </form> 
+      </div> 
+    <%- include('partials/footer.ejs'); -%>  
+ 

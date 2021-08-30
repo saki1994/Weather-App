@@ -1,0 +1,56 @@
+<%- include('partials/header.ejs'); -%>  
+<p class="place"><i class="far fa-compass"></i> &nbsp; City, Country 
+</p> 
+<h2 class="temp">0°C</h2>    
+<p class="temp-type">Weather &nbsp; 
+  <span>H: 0° &nbsp; L: 0° </span></p>
+</div> 
+<div class="right-side"> 
+<table> 
+      <tr>
+        <th>HUMIDITY</th>
+        <td>00.00%</td>
+      </tr>
+      <tr>
+        <th>FEELS LIKE</th>
+        <td>0°</td>
+      </tr>
+      <tr>
+        <th>WIND</th>
+        <td>0 km/h</td>
+      </tr>
+</table>
+<hr>
+<div class='forecast-box'>
+  <div>
+    <i class="fas fa-cloud-sun-rain fa-2x"></i>
+    <p>00:00</p>
+    <p>0°</p>
+  </div>
+  <div>
+    <i class="fas fa-cloud-sun-rain fa-2x"></i>
+    <p>00:00</p>
+    <p>0°</p>
+  </div>
+  <div>
+    <i class="fas fa-cloud-sun-rain fa-2x"></i>
+    <p>00:00</p>
+    <p>0°</p>
+  </div>
+  <div>
+    <i class="fas fa-cloud-sun-rain fa-2x"></i>
+    <p>00:00</p>
+    <p>0°</p>
+  </div>
+  <div>
+    <i class="fas fa-cloud-sun-rain fa-2x"></i>
+    <p>00:00</p>
+    <p>0°</p>
+  </div>
+</div>
+
+<form class="search" action="/" method="POST"> 
+    <input type="text" name="city" id="city" placeholder="Enter your city...">  
+</form>  
+</div> 
+    <%- include('partials/footer.ejs'); -%>  

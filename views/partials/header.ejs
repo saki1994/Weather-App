@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://kit.fontawesome.com/37950352a1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <% if (dayOrNight < 18) {%>
+        <img class='bg-img'src="/images/day.jpg" alt="morning sky" /> <% } else { %>
+        <img class='bg-img' src="/images/night.jpg" alt="night sky" /> <% } %>
+    <div class="weather-box">
+      <div class="left-side">
+        <p class="day"><%= day%></p>
+        <p class="date"><%= date%></p> 
