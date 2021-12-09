@@ -1,0 +1,5 @@
+What to do...
+
+
+1. Font sizes
+2. Add more blur or filter to see div better
