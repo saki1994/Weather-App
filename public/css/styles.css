@@ -163,6 +163,7 @@ form {
     display: flex;
     flex-direction: column;
     margin-top: 0;
+    padding-top: 25px;
   }
 
   .left-side {
